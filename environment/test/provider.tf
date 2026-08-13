@@ -8,6 +8,13 @@ terraform {
     }
   }
 
+  backend "azurerm" {
+    resource_group_name          = "rg-remotestatefile"
+    storage_storage_account_name = "onewebstg"
+    container_name               = "oneweb-container"
+    key                          = "oneweb-statefile.tfstate"
+  }
+
 }
 
 provider "azurerm" {
