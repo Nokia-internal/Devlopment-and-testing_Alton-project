@@ -10,7 +10,7 @@ terraform {
 
   backend "azurerm" {
     resource_group_name          = "prod-rg-remotestatefile"
-    storage_storage_account_name = "prod-onewebstg"
+    storage_storage_account_name = "prodonewebstg"
     container_name               = "prod-oneweb-container"
     key                          = "prod-oneweb-statefile.tfstate"
   }
